@@ -11,7 +11,7 @@ function Landing() {
       >
         <img src="/bg-top.png" alt="" />
       </div>
-      <div className="w-[85%] mt-5 text-[1.2rem] bg-white m-auto border-[2px] border-black py-[2rem] px-[6rem] text-center flex flex-col gap-5">
+      <div className="md:w-[85%] w-[95%] mt-5 text-[1rem] md:text-[1.2rem] bg-white m-auto border-[2px] border-black py-[2rem] md:px-[6rem] text-center flex flex-col gap-5">
         <p>
           The Executive Council of the ISEG and Team EGCON 2025 take pride in
           inviting you to join them at the celebrations and to the conference.
@@ -33,9 +33,9 @@ function Landing() {
             tours to explore and experience India.
           </p>
       </div>
-      <div className="flex flex-col gap-2 items-center mt-10">
-        <h1 className="text-[4rem] font-jh">Important Links</h1>
-        <div className="flex flex-col flex-wrap h-[20rem] w-[80%] gap-10 mt-10">
+      <div className="flex flex-col gap-2 items-center mt-10 overflow-hidden">
+        <h1 className="md:text-[4rem] text-[2rem] font-jh">Important Links</h1>
+        <div className="flex flex-col flex-wrap h-[20rem] w-[100%] md:w-[80%] gap-10 mt-10">
             {data.map((item,index)=><Link key={index} text={item}/>)}
         </div>
       </div>
@@ -45,7 +45,7 @@ function Landing() {
 
 function Link({text}:{text:string}){
     return (
-        <div className="flex flex-row gap-2 text-[1.5rem] items-center cursor-pointer">
+        <div className="flex flex-row gap-2 text-[0.5rem] md:text-[1.5rem] items-center cursor-pointer">
         <BiSolidRightArrow className="text-[1.5rem]"/>
         <p>{text}</p>
         </div>
