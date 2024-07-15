@@ -1,6 +1,7 @@
 import { BiSolidRightArrow } from "react-icons/bi";
+import Navbar from "./navbar";
 
-const data=["The Confernce","About ISEG","Newsletters","Publications","Members","Contact Secretarait","Visit IAEG","Geographical Help","The Conference","The Conference","Geographical Help","The Conference","The Conference","Geographical Help","The Conference","The Conference"]
+const data=["The Confernce","About ISEG","Newsletters","Publications","Members","Contact Secretarait","Visit IAEG","Geographical Help","The Conference","The Conference"]
 
 function Landing() {
   return (
@@ -33,10 +34,10 @@ function Landing() {
             tours to explore and experience India.
           </p>
       </div>
-      <div className="flex flex-col gap-2 items-center mt-10 overflow-hidden">
+      <div className="flex flex-col gap-2 items-center mt-10 overflow-hidden mb-5">
         <h1 className="md:text-[4rem] text-[2rem] font-jh">Important Links</h1>
-        <div className="flex flex-col flex-wrap h-[20rem] w-[100%] md:w-[80%] gap-10 mt-10">
-            {data.map((item,index)=><Link key={index} text={item}/>)}
+        <div className="grid md:grid-cols-2 row-start-auto  h-max w-[80%] md:w-[80%]  mt-10">
+            {data.map((item,index)=><Link key={index} text="Lorem ipsum dolor sit amet, vim quando iracundia"/>)}
         </div>
       </div>
     </div>
@@ -45,9 +46,8 @@ function Landing() {
 
 function Link({text}:{text:string}){
     return (
-        <div className="flex flex-row gap-2 text-[0.5rem] md:text-[1.5rem] items-center cursor-pointer">
-        <BiSolidRightArrow className="text-[1.5rem]"/>
-        <p>{text}</p>
+        <div className="flex border-[1px] justify-center font-light p-4 border-black bg-light flex-row gap-2 text-[0.7rem] md:text-[1.5rem] items-center cursor-pointer">
+        {text}
         </div>
     )
 }

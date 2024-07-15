@@ -9,6 +9,9 @@ export default {
       fontFamily: {
         'jh': ['Jomolhari', 'sans-serif'],
       },
+      colors:{
+        'light':"rgba(89, 151, 203, 0.18)",
+      }
     },
   },
   plugins: [],
