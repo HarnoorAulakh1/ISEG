@@ -1,6 +1,3 @@
-import { BiSolidRightArrow } from "react-icons/bi";
-import Navbar from "./navbar";
-
 const data=["The Confernce","About ISEG","Newsletters","Publications","Members","Contact Secretarait","Visit IAEG","Geographical Help","The Conference","The Conference"]
 
 function Landing() {
