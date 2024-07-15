@@ -34,7 +34,7 @@ function Landing() {
       <div className="flex flex-col gap-2 items-center mt-10 overflow-hidden mb-5">
         <h1 className="md:text-[4rem] text-[2rem] font-jh">Important Links</h1>
         <div className="grid md:grid-cols-2 row-start-auto  h-max w-[80%] md:w-[80%]  mt-10">
-            {data.map((item,index)=><Link key={index} text="Lorem ipsum dolor sit amet, vim quando iracundia"/>)}
+            {data.map((index)=><Link key={index} text="Lorem ipsum dolor sit amet, vim quando iracundia"/>)}
         </div>
       </div>
     </div>
