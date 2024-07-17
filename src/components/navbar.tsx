@@ -50,8 +50,8 @@ const data = [
     child: [],
   },
   {
-    text: "Contact Secretarait",
-    link: "/contact-secretarait",
+    text: "Contact Secretariat",
+    link: "/contact-secretariat",
   },
   {
     text: "Visit IAEG",
