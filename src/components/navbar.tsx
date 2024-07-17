@@ -74,7 +74,7 @@ function Navbar() {
             ISEG Golden Jublee
           </p>
           <p className="text-sm font-light  border-r-[1px] cursor-pointer py-2 px-1 md:px-2 border-[#bdbcbc]">
-            ECON 2025
+            EGCON 2025
           </p>
         </div>
 
@@ -89,7 +89,7 @@ function Navbar() {
             ISEG
           </p>
           <p>INDIAN SOCIETY OF ENGINEERING GEOLOGY</p>
-          <p>(India National Group of IAGE)</p>
+          <p>(India National Group of IAEG)</p>
         </div>
         <div className="md:hidden flex flex-row justify-between items-center px-5">
           <IoMdMenu
