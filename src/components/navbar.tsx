@@ -1,5 +1,4 @@
-import { IoIosSearch } from "react-icons/io";
-import { FaSquareFacebook } from "react-icons/fa6";
+
 import { FaLinkedin } from "react-icons/fa";
 import { FaTwitter } from "react-icons/fa";
 import { IoMdMenu } from "react-icons/io";
@@ -67,21 +66,6 @@ function Navbar() {
   const [open, set] = useState<boolean>(false);
   return (
     <div className="w-full h-max md:sticky top-0 bg-[#F2F2F2] relative z-[99999] pb-5">
-      <div className="w-full md:flex hidden bg-[#d3d3d3] gap-5 items-center flex-row justify-end md:pl-10 md:pr-10 pl-5 pr-5">
-        <IoIosSearch className="cursor-pointer text-[1.2rem]" />
-        <div className="flex flex-row gap-0">
-          <p className="text-sm font-light border-x-[1px] cursor-pointer py-2 px-1 md:px-2 border-[#bdbcbc]">
-            ISEG Golden Jublee
-          </p>
-          <p className="text-sm font-light  border-r-[1px] cursor-pointer py-2 px-1 md:px-2 border-[#bdbcbc]">
-            EGCON 2025
-          </p>
-        </div>
-
-        <FaSquareFacebook className="text-[#606060] cursor-pointer text-[1.2rem]" />
-        <FaLinkedin className="text-[#606060] cursor-pointer text-[1.2rem]" />
-        <FaTwitter className="text-[#606060] cursor-pointer text-[1.2rem]" />
-      </div>
       <div className="flex flex-row justify-center text-[0.8rem] font-jh items-start px-2 md:items-center w-full py-5 md:py-10 gap-5">
         <img src="/logo2.png" alt="logo" className="md:w-[8rem] w-[4rem]" />
         <div className="felx flex-row justify-start">
