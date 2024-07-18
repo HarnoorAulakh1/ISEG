@@ -18,10 +18,15 @@ function Footer() {
             EGCON 2025
           </p>
         </div>
-
-        <FaSquareFacebook className="text-[#606060] cursor-pointer text-[1.2rem]" />
-        <FaLinkedin className="text-[#606060] cursor-pointer text-[1.2rem]" />
-        <FaTwitter className="text-[#606060] cursor-pointer text-[1.2rem]" />
+        <a href="">
+          <FaSquareFacebook className="text-[#606060] cursor-pointer text-[1.2rem]" />
+        </a>
+        <a href="https://www.linkedin.com/in/iseg-india-6096a871">
+          <FaLinkedin className="text-[#606060] cursor-pointer text-[1.2rem]" />
+        </a>
+        <a href="https://x.com/ISEGINDIA?mx=2">
+          <FaTwitter className="text-[#606060] cursor-pointer text-[1.2rem]" />
+        </a>
       </div>
     </footer>
   );
