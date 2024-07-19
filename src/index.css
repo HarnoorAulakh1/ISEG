@@ -3,12 +3,12 @@
 @tailwind utilities;
 
 body{
-    height: 100vh;
+    height: 100%;
     width: 100vw;
     margin: 0;
     padding: 0;
     overflow-x: hidden;
-    background-color:#F2F2F2;
+    background-color:#FFFFFF;
 }
 h1{
     padding: 0;

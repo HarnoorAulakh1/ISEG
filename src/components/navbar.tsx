@@ -18,7 +18,16 @@ const data = [
   {
     text: "About ISEG",
     link: "/about",
-    child: [],
+    child: [
+      {
+        text: "ISEG",
+        link: "/iseg",
+      },
+      {
+        text: "Article",
+        link: "/article",
+      },
+    ],
   },
   {
     text: "Newsletters",
@@ -45,7 +54,20 @@ const data = [
   {
     text: "Members",
     link: "/members",
-    child: [],
+    child: [
+      {
+        text: "ISEG Members",
+        link: "/member-iseg",
+      },
+      {
+        text: "IAEG Members",
+        link: "/member-iaeg",
+      },
+      {
+        text: "Membership",
+        link: "/membership",
+      },
+    ],
   },
   {
     text: "Contact Secretariat",
@@ -76,8 +98,11 @@ function Navbar() {
             <br /> (India National Group of IAEG)
           </p>
         </div>
-        <div onClick={() => set((x) => !x)} className="block md:hidden w-[2rem] overflow-hidden">
-          <IoMdMenu className="text-[2rem]"/>
+        <div
+          onClick={() => set((x) => !x)}
+          className="block md:hidden w-[2rem] overflow-hidden"
+        >
+          <IoMdMenu className="text-[2rem]" />
         </div>
       </div>
 
@@ -93,7 +118,9 @@ function Navbar() {
 
         {data.map((x) => (
           <>
-            {x.text === "Publications" || x.text == "Members" ? (
+            {x.text === "Publications" ||
+            x.text == "About ISEG" ||
+            x.text == "Members" ? (
               <Link1 text={x.text} child={x.child} color="#1f1f1f" />
             ) : (
               <NavLink
@@ -126,7 +153,9 @@ function Links() {
   return (
     <div className="md:flex h-[1.5rem] md:flex-row justify-center hidden gap-10 text-[1rem]">
       {data.map((x) =>
-        x.text === "Publications" || x.text == "Members" ? (
+        x.text === "Publications" ||
+        x.text == "About ISEG" ||
+        x.text == "Members" ? (
           <Link1 text={x.text} child={x.child} color="#d3d3d3" />
         ) : (
           <NavLink
@@ -157,9 +186,9 @@ function Link1({
 }) {
   return (
     <div className={`font-light cursor-pointer group`}>
-      {text}
+      <p className="flex flex-col md:items-center"> {text}</p>
       <div
-        className={`flex flex-col relative z-[9999] bg-[${color}] gap-1 transition-all ease-linear duration-150 overflow-hidden group-hover:h-[6rem] h-0 items-center rounded-xl`}
+        className={`flex flex-col relative z-[9999] px-1 bg-[${color}] gap-1 transition-all ease-linear duration-150 overflow-hidden group-hover:h-max  h-0 items-center rounded-xl`}
       >
         {child &&
           child.map((x) => (
