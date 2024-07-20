@@ -86,7 +86,7 @@ const data = [
 function Navbar() {
   const [open, set] = useState<boolean>(false);
   return (
-    <div className="w-full flex md:flex-row flex-col justify-center items-center gap-5 h-max md:sticky top-0 bg-[#F2F2F2] relative z-[99999] pb-2">
+    <div className="w-full flex md:flex-row flex-col justify-center items-center gap-5 h-max md:sticky top-0 bg-white relative z-[99999] pb-2">
       <div className="flex flex-row justify-center items-center">
         <div className="flex flex-col">
           <div className="flex flex-row gap-1">
