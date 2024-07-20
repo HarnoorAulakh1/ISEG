@@ -5,6 +5,7 @@ import About, { Article } from "./components/about.tsx";
 import NewsLetter from "./components/newsletter";
 import { Journal, Other, Special } from "./components/publications";
 import { Members1, Members2 ,Membership} from "./components/members";
+import Contact from "./components/contact";
 
 export const router = createBrowserRouter([
   {
@@ -54,6 +55,9 @@ export const router = createBrowserRouter([
       {
         path:"membership",
         element:<Membership/>
+      },{
+        path:"contact-secretariat",
+        element:<Contact/>
       }
     ],
   },

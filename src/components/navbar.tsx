@@ -151,7 +151,7 @@ function Navbar() {
 
 function Links() {
   return (
-    <div className="md:flex h-[1.5rem] md:flex-row justify-center hidden gap-10 text-[1rem]">
+    <div className="md:flex h-[1.5rem] md:flex-row  justify-center hidden gap-10 text-[1rem]">
       {data.map((x) =>
         x.text === "Publications" ||
         x.text == "About ISEG" ||

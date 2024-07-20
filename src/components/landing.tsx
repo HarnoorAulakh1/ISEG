@@ -9,7 +9,7 @@ function Landing() {
       >
         <img src="/bg-top.png" alt="" />
       </div>
-      <div className="md:w-[85%] w-[95%] mt-5 text-[1rem] md:text-[1.2rem] bg-white m-auto border-[2px] border-black py-[2rem] md:px-[6rem] px-[1rem] text-center flex flex-col gap-5">
+      <div className="md:w-[85%] w-[95%] mt-5 text-[1rem] md:text-[1.2rem] bg-white m-auto border-[2px] border-black py-[2rem] md:px-[6rem] px-[1rem] flex flex-col gap-5">
         <p>
           The Executive Council of the ISEG and Team EGCON 2025 take pride in
           inviting you to join them at the celebrations and to the conference.

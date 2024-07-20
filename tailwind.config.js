@@ -6,6 +6,9 @@ export default {
   ],
   theme: {
     extend: {
+      transitionProperty: {
+        'max-height': 'max-height'
+      },
       fontFamily: {
         'jh': ['Jomolhari', 'sans-serif'],
       },

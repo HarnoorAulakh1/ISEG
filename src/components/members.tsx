@@ -109,7 +109,7 @@ export function Members2() {
 export function Membership() {
   return (
     <div className="bg-[#d3d3d3]">
-      <div className="flex flex-col items-center m-auto justify-center w-[90%] gap-5 mb-5 mt-5 bg-[#d3d3d3]">
+      <div className="flex flex-col items-center m-auto justify-center w-[90%] gap-5 mb-5 mt-5 bg-[#d4d4d4]">
         <h1 className="text-[2rem] md:text-[3.5rem]">Membership</h1>
         <hr className="w-[40%] bg-black h-[3px]" />
         <p className="text-[1.5rem] font-extralight">
