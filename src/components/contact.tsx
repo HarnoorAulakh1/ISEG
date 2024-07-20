@@ -1,12 +1,7 @@
 import { useState } from "react";
 import { motion } from "framer-motion";
 
-const data = [
-  {
-    question: "What are benefits an ISEG Member is entitled to?",
-    answer: "",
-  },
-];
+
 
 export default function Contact() {
   function handle(e: React.FormEvent<HTMLFormElement>): void {
