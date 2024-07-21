@@ -2,13 +2,17 @@ import { NavLink } from "react-router-dom";
 
 const data = [
   { text: "The Confernce", link: "/egcon" },
-  { text: "About ISEG", link: "/iseg" },
-  { text: "Newsletters", link: "/newsletters" },
-  { text: "Publications", link: "/journal" },
-  { text: "Members", link: "/member-iseg" },
-  { text: "Contact Secretarait", link: "contact-secretariat" },
-  { text: "Visit IAEG", link: "https://www.iaeg.info/" },
-  { text: "Geographical Help", link: "/help" },
+  { text: "The IAEG and the ISEG", link: "/egcon/about" },
+  { text: "Key dates", link: "/egcon/dates" },
+  { text: "Conference Themes", link: "/egcon/themes" },
+  { text: "Keynote Lectures", link: "/egcon/keynote" },
+  { text: "Abstracts and Full Papers", link: "/egcon/abstract" },
+  { text: "Explore India", link: "/egcon/explore" },
+  { text: "Registrations", link: "/egcon/register" },
+  { text: "Sponsors", link: "/egcon/sponsor" },
+  { text: "Accomodation and Transport", link: "/egcon/accomodation" },
+  { text: "Organising Committee", link: "/egcon/committee" },
+  { text: "Contact Us", link: "/egcon/contact" },
 ];
 
 function Landing() {

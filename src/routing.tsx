@@ -67,6 +67,10 @@ export const router = createBrowserRouter([
         element: <Help />,
       },
       {
+        path: "egcon/:id",
+        element: <Egcon />,
+      },
+      {
         path: "egcon",
         element: <Egcon />,
       },
