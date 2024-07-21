@@ -4,8 +4,10 @@ import Landing from "./components/landing";
 import About, { Article } from "./components/about.tsx";
 import NewsLetter from "./components/newsletter";
 import { Journal, Other, Special } from "./components/publications";
-import { Members1, Members2 ,Membership} from "./components/members";
+import { Members1, Members2, Membership } from "./components/members";
 import Contact from "./components/contact";
+import Help from "./components/help";
+import Egcon from "./components/egcon";
 
 export const router = createBrowserRouter([
   {
@@ -21,15 +23,15 @@ export const router = createBrowserRouter([
         ),
       },
       {
-        path: "/iseg",
+        path: "iseg",
         element: <About />,
       },
       {
-        path: "/article",
+        path: "article",
         element: <Article />,
       },
       {
-        path: "/newsletters",
+        path: "newsletters",
         element: <NewsLetter />,
       },
       {
@@ -53,12 +55,21 @@ export const router = createBrowserRouter([
         element: <Members2 />,
       },
       {
-        path:"membership",
-        element:<Membership/>
-      },{
-        path:"contact-secretariat",
-        element:<Contact/>
-      }
+        path: "membership",
+        element: <Membership />,
+      },
+      {
+        path: "contact-secretariat",
+        element: <Contact />,
+      },
+      {
+        path: "help",
+        element: <Help />,
+      },
+      {
+        path: "egcon",
+        element: <Egcon />,
+      },
     ],
   },
 ]);

@@ -37,11 +37,11 @@ export default function Contact() {
       >
         <div className="flex flex-row justify-between w-full">
           <p>Name</p>
-          <input type="text" name="Name" className="bg-[#ebebeb]" />
+          <input type="text" name="Name" className="bg-[#ebebeb] w-[20rem] p-2" />
         </div>
         <div className="flex flex-row justify-between w-full">
           <p>Email Address</p>
-          <input type="email" name="Email" className="bg-[#ebebeb]" />
+          <input type="email" name="Email" className="bg-[#ebebeb] w-[20rem] p-2" />
         </div>
         <div className="flex flex-row justify-between w-full">
           <p>Subject</p>
@@ -55,7 +55,7 @@ export default function Contact() {
         </div>
         <div className="flex flex-row justify-between w-full">
           <p>Query</p>
-          <textarea className="bg-[#ebebeb]" name="Query" />
+          <textarea className="bg-[#ebebeb] p-2 w-[20rem]" name="Query" />
         </div>
         <button type="submit" className="bg-[#ebebeb] p-2 rounded-xl ">
           submit

@@ -16,6 +16,59 @@ const data = [
   "Pre-Event Publication on Natural Hazard",
 ];
 
+const data2 = [
+  "Baglihar",
+  "Baira-Siul",
+  "Balimala",
+  "Bansagar",
+  "Baspa",
+  "Beas Satluj Lank",
+  "Bhaba",
+  "Bhakra",
+  "Chamera",
+  "Loktak",
+  "Malpa Landslide",
+  "Damodar Valley",
+  "Dihang",
+  "Doyang",
+  "Dul Hasti",
+  "Giri",
+  "Idukki",
+  "Indravati",
+  "Jaldhaka",
+  "Kadana",
+  "Kopili",
+  "Koyna",
+  "Maneri Bhali",
+  "Nagarjuna Sagar",
+  "Narmada Sagar",
+
+  "Nathpa Jhakri",
+  "Nilgiri Hills",
+  "Pench",
+  "Pong",
+  "Pykara",
+  "Ramganga",
+  "Rammam",
+  "Rana Pratap Sagar",
+  "Ranjit Sagar (Thein)",
+  "Salal",
+  "Sardar Sarovar",
+  "Srinagar",
+  "Srisailam",
+  "Subarnarekha",
+  "Supa",
+  "Tehri",
+  "Tenughat",
+  "Thein (Ranjit Sagar)",
+  "Tista",
+  "Ukai",
+  "Umiam",
+  "Upper Kolab",
+  "Yamuna Hydel",
+  "Yeleru",
+];
+
 export function Journal() {
   const data = [];
   for (let i = 0; i < 36; i++) data.push(i);
@@ -36,13 +89,13 @@ export function Journal() {
           structures in India that have been addressed include the following.
         </p>
       </div>
-      <div className="md:w-[75%] w-[90%] flex flex-col m-auto gap-[2rem]">
+      <div className="md:w-[80%] w-[90%] flex flex-col m-auto gap-[2rem]">
         <h1 className="text-[3rem]">Addresses</h1>
-        <div className="flex text-[1.5rem] md:text-[2rem] items-center justify-center gap-[2rem] md:gap-[4rem]  flex-row flex-wrap">
-          {data.map(() => (
+        <div className="grid grid-cols-4 text-[1.5rem] md:text-[2rem]  gap-[2rem] md:gap-[2rem]  ">
+          {data2.map((x) => (
             <div className="flex flex-row items-center gap-1">
               <div className="rounded-[2rem] bg-black w-1 h-1"></div>
-              <p className="text-[#9C9999] underline font-light">Baglihar</p>
+              <p className="text-[#9C9999] underline font-light">{x}</p>
             </div>
           ))}
         </div>
@@ -66,7 +119,9 @@ export function Special() {
   return (
     <div>
       <div className="flex flex-col items-center gap-5 mb-5 mt-5 bg-[#d3d3d3] pb-5">
-        <h1 className="text-[2rem] md:text-[3.5rem]">ISEG Special Publication</h1>
+        <h1 className="text-[2rem] md:text-[3.5rem]">
+          ISEG Special Publication
+        </h1>
         <hr className="w-[40%] bg-black h-[3px]" />
         <p className="text-xl mt-4 md:w-max w-[90%]">
           Periodically, the ISEG brings out special publications. Following is
