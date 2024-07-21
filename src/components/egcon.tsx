@@ -8,7 +8,10 @@ export default function Egcon() {
   useEffect(() => {
     if (id) {
       const element = document.getElementById(id);
-      if (element) element.scrollIntoView({ behavior: "smooth" });
+      if (element)
+        setTimeout(() => {
+          element.scrollIntoView({ behavior: "smooth" });
+        }, 100);
     }
   }, [id]);
 
