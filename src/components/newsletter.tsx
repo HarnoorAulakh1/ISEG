@@ -26,7 +26,7 @@ function NewsLetter() {
           link="https://isegindia.org/pdfs/ISEGNEWS-OCT%202019.pdf"
         />
         <Tab
-          date="April 2019"
+          date="October 2019"
           link="https://isegindia.org/pdfs/ISEGNEWS-OCT%202019.pdf"
         />
         <Tab
@@ -66,11 +66,11 @@ function NewsLetter() {
           link="https://isegindia.org/pdfs/ISEG-NEWS-OCT-13-FINAL.pdf"
         />
         <Tab
-          date="April 2013"
+          date="May 2013"
           link="https://isegindia.org/pdfs/ISEG%20NEWS-MAY-2013-13-05-FINAL(1).pdf"
         />
         <Tab
-          date="October 2012"
+          date="April 2012"
           link="https://isegindia.org/pdfs/isegnews_april2012.pdf"
         />
         <Tab
