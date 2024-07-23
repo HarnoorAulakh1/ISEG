@@ -18,11 +18,28 @@ const data = [
 function Landing() {
   return (
     <div className="w-full">
-      <div
-        style={{ backgroundImage: `url(${"/bg.png"})` }}
-        className=" flex flex-col justify-center items-center py-[3.5rem]"
-      >
-        <img src="/bg-top.png" alt="" />
+      <div className=" flex flex-col justify-center h-max relative items-center py-[3.5rem]">
+        <img src="/landing.png" alt="" />
+        <div className=" flex flex-col justify-center absolute w-[50rem] items-center text-2xl p-10">
+          <div className="bg-[#D9D9D9] h-[15rem] w-[50rem] opacity-40 absolute"></div>
+          <div className="absolute  flex flex-col justify-center items-center">
+            <p>Celebrating 60 years of ISEG</p>
+            <p className="font-bold">EGCON 2025</p>
+            <p>
+              The International Conference on Engineering Geology and Geohazards
+            </p>
+          </div>
+        </div>
+      </div>
+      <div className="flex flex-col gap-5 justify-center w-[90%] m-auto">
+        <hr className="border-[1px]   bg-black border-black" />
+        <div className="flex flex-row justify-start gap-10 items-center w-full ">
+        <p className="text-3xl ">Announcements :</p>
+        <button className="bg-[#f2f0f0] p-2 rounded-md">
+          Registration ends in 10 days
+        </button>
+      </div>
+        <hr className="border-[1px]  bg-black border-black" />
       </div>
       <div className="md:w-[85%] w-[95%] mt-5 text-[1rem] text-justify md:text-[1.5rem] bg-white m-auto border-[2px] border-black py-[2rem] md:px-[6rem] px-[1rem] flex flex-col gap-5">
         <p>
