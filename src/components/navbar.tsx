@@ -126,6 +126,7 @@ function Navbar() {
         >
           <IoMdMenu className="text-[2rem]" />
         </div>
+        
       </div>
 
       <div
@@ -166,7 +167,16 @@ function Navbar() {
           <FaTwitter className="text-[#606060] cursor-pointer text-[2rem]" />
         </div>
       </div>
+      
       <Links />
+      <div className="flex flex-col">
+          <div className="flex flex-row gap-1">
+            <a href="https://iaeg.info/" target="_blank">
+            <img src="/egcon.png" alt="logo" className="md:w-[7rem] w-[4rem]" />
+            </a>
+          </div>
+          
+        </div>
     </div>
   );
 }
