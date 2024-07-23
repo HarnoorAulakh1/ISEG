@@ -70,20 +70,38 @@ const data = [
     ],
   },
   {
-    text: "Contact Secretariat",
+    text: "Contact-us",
     link: "/contact-secretariat",
   },
+  // {
+  //   text: "Visit IAEG",
+  //   link: "https://iaeg.info/",
+  // },
   {
-    text: "Visit IAEG",
-    link: "https://iaeg.info/",
-  },
-  {
-    text: "Geographical Help",
+    text: "Geotechnical Help",
     link: "/help",
   },
   {
-    text: "Egcon 2025",
+    text: "Events",
     link: "/egcon",
+    child: [
+      {
+        text: "EGCON 2025",
+        link: "/egcon",
+      },
+      {
+        text: "EGCON 2023",
+        link: "/egcon23",
+      },
+      {
+        text: "EGCON 2022",
+        link: "/egcon22",
+      },
+      {
+        text: "ISEG Golden Jubilee",
+        link: "/iseg-gj",
+        },
+    ]
   },
 ];
 
@@ -111,9 +129,8 @@ function Navbar() {
       </div>
 
       <div
-        className={`${
-          open ? "h-[40rem] w-full p-4" : "h-0 w-0"
-        }  bg-[#1f1f1f] transition-all duration-200 z-[9999]  text-[#fafafa99] overflow-hidden flex flex-col text-[1rem] gap-2`}
+        className={`${open ? "h-[40rem] w-full p-4" : "h-0 w-0"
+          }  bg-[#1f1f1f] transition-all duration-200 z-[9999]  text-[#fafafa99] overflow-hidden flex flex-col text-[1rem] gap-2`}
       >
         <RxCross2
           className="cursor-pointer w-5 mb-5"
@@ -123,8 +140,9 @@ function Navbar() {
         {data.map((x) => (
           <>
             {x.text === "Publications" ||
-            x.text == "About ISEG" ||
-            x.text == "Members" ? (
+              x.text == "About ISEG" ||
+              x.text == "Members" ||
+              x.text == "Events" ? (
               <Link1 text={x.text} child={x.child} color="#1f1f1f" />
             ) : (
               <NavLink
@@ -158,8 +176,9 @@ function Links() {
     <div className="md:flex h-[1.5rem] md:flex-row  justify-center hidden gap-7 text-[1rem]">
       {data.map((x) =>
         x.text === "Publications" ||
-        x.text == "About ISEG" ||
-        x.text == "Members" ? (
+          x.text == "About ISEG" ||
+          x.text == "Members" ||
+          x.text == "Events" ? (
           <Link1 text={x.text} child={x.child} color="#d3d3d3" />
         ) : (
           <NavLink
