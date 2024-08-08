@@ -70,13 +70,9 @@ const data = [
     ],
   },
   {
-    text: "Contact-us",
+    text: "Contact-Us",
     link: "/contact-secretariat",
   },
-  // {
-  //   text: "Visit IAEG",
-  //   link: "https://iaeg.info/",
-  // },
   {
     text: "Geotechnical Help",
     link: "/help",
@@ -183,20 +179,20 @@ function Navbar() {
 
 function Links() {
   return (
-    <div className="xl:flex h-[1.5rem] xl:flex-row  justify-center hidden gap-7 text-[1rem]">
+    <div className="xl:flex h-[1.5rem] xl:flex-row  justify-center hidden gap-3 text-[1rem]">
       {data.map((x) =>
         x.text === "Publications" ||
           x.text == "About ISEG" ||
           x.text == "Members" ||
           x.text == "Events" ? (
-          <Link1 text={x.text} child={x.child} color="#d3d3d3" />
+          <Link1 text={x.text} child={x.child} color="#d3d3d3" key={x.text} />
         ) : (
           <NavLink
             to={x.link}
             className={({ isActive }) => {
               return (
                 `${isActive ? "underline font-semibold " : ""}` +
-                " font-light cursor-pointer"
+                " font-light cursor-pointer block px-1"
               );
             }}
           >
@@ -221,7 +217,7 @@ function Link1({
     <div className={`font-light cursor-pointer group`}>
       <p className="flex flex-col md:items-center"> {text}</p>
       <div
-        className={`flex flex-col relative z-[9999] px-1 bg-[${color}] gap-1 transition-all ease-linear duration-150 overflow-hidden group-hover:h-max  h-0 items-center rounded-xl`}
+        className={`flex flex-col relative z-[9999] px-3 bg-[${color}] gap-1 transition-all ease-linear duration-150 overflow-hidden group-hover:h-max  h-0 items-center rounded-xl`}
       >
         {child &&
           child.map((x) => (
