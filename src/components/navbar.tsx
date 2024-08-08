@@ -108,8 +108,8 @@ const data = [
 function Navbar() {
   const [open, set] = useState<boolean>(false);
   return (
-    <div className="w-full flex md:flex-row flex-col justify-center items-center gap-5 h-max md:sticky top-0 bg-white relative z-[99999] pb-2">
-      <div className="flex flex-row justify-center items-center">
+    <div className="w-full flex xl:flex-row flex-col justify-center items-center gap-5 h-max xl:sticky top-0 bg-white relative z-[99999] pb-2">
+      <div className="flex flex-row xl:w-max w-[80%] items-center justify-between">
         <div className="flex flex-col">
           <div className="flex flex-row gap-1">
             <img src="/logo2.png" alt="logo" className="md:w-[5rem] w-[4rem]" />
@@ -122,7 +122,7 @@ function Navbar() {
         </div>
         <div
           onClick={() => set((x) => !x)}
-          className="block md:hidden w-[2rem] overflow-hidden"
+          className="block xl:hidden w-[2rem] overflow-hidden"
         >
           <IoMdMenu className="text-[2rem]" />
         </div>
@@ -169,7 +169,7 @@ function Navbar() {
       </div>
       
       <Links />
-      <div className="flex flex-col">
+      <div className="xl:flex hidden xl:flex-col">
           <div className="flex flex-row gap-1">
             <a href="https://iaeg.info/" target="_blank">
             <img src="/egcon.png" alt="logo" className="md:w-[7rem] w-[4rem]" />
@@ -183,7 +183,7 @@ function Navbar() {
 
 function Links() {
   return (
-    <div className="md:flex h-[1.5rem] md:flex-row  justify-center hidden gap-7 text-[1rem]">
+    <div className="xl:flex h-[1.5rem] xl:flex-row  justify-center hidden gap-7 text-[1rem]">
       {data.map((x) =>
         x.text === "Publications" ||
           x.text == "About ISEG" ||

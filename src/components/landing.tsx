@@ -20,9 +20,9 @@ function Landing() {
     <div className="w-full">
       <div className=" flex flex-col justify-center h-max relative items-center py-[3.5rem]">
         <img src="/landing.png" alt="" />
-        <div className=" flex flex-col justify-center absolute w-[50rem] items-center text-2xl p-10">
-          <div className="bg-[#D9D9D9] h-[15rem] w-[50rem] opacity-40 absolute"></div>
-          <div className="absolute  flex flex-col justify-center items-center">
+        <div className=" flex flex-col justify-center absolute w-[20rem] md:w-[50rem] items-center text-2xl p-10">
+          <div className="bg-[#D9D9D9] h-[5rem] md:h-[15rem] w-[20rem] md:w-[50rem] opacity-40 absolute"></div>
+          <div className="absolute text-sm text-center md:text-2xl  flex flex-col justify-center items-center">
             <p>Celebrating 60 years of ISEG</p>
             <p className="font-bold">EGCON 2025</p>
             <p>
@@ -33,9 +33,9 @@ function Landing() {
       </div>
       <div className="flex flex-col gap-5 justify-center w-[90%] m-auto">
         <hr className="border-[1px]   bg-black border-black" />
-        <div className="flex flex-row justify-start gap-10 items-center w-full ">
-        <p className="text-3xl ">Announcements :</p>
-        <button className="bg-[#f2f0f0] p-2 rounded-md">
+        <div className="flex flex-row  justify-start gap-40 md:items-center w-full ">
+        <p className="md:text-3xl text-xl">Announcements :</p>
+        <button className="bg-[#f2f0f0] w-max p-1 md:p-2 rounded-md md:text-md text-sm" >
           Registration ends in 10 days
         </button>
       </div>
