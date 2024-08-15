@@ -19,29 +19,9 @@ function Landing() {
   return (
     <div className="w-full">
       <div className="flex flex-col justify-center h-[30%] relative items-center py-[.5rem] w-full">
-        <img src="/landing2.png" alt="" className="w-full h-full object-cover" />
-        <div className="flex flex-col justify-center absolute w-full h-full items-center text-3xl p-10">
-          <div className="bg-[#D9D9D9] h-[25%] md:h-[40%] w-full md:w-[60rem] opacity-40 absolute"></div>
-          <div className="absolute text-sm text-center md:text-2xl flex flex-col justify-center items-center">
-            <p>Celebrating 60 years of ISEG</p>
-            <p className="font-bold">EGCON 2025</p>
-            <p>
-              The International Conference on Engineering Geology and Geohazards
-            </p>
-          </div>
-        </div>
+        <img src="/landing2.jpg" alt="" className="w-full h-full object-cover" />
       </div>
 
-      <div className="flex flex-col gap-5 justify-center md:w-[85%] w-[75%] m-auto">
-        <hr className="border-[1px]  bg-black border-black" />
-        <div className="flex flex-row  justify-start gap-10 md:items-center w-full ">
-          <p className="md:text-2xl text-xl">Announcements :</p>
-          <p className="bg-[#f2f0f0] w-max p-1 md:p-2 rounded-md md:text-md text-sm" >
-            Registration ends in 10 days
-          </p>
-        </div>
-        <hr className="border-[1px]  bg-black border-black" />
-      </div>
       <div className="md:w-[95%] w-[95%] mt-5 mx-auto text-[1rem] md:text-[1.1rem] lg:text-[1.2rem] text-center text-justify md:px-[6rem] px-[1rem] flex flex-col gap-5">
         <p>
           The Executive Council of the ISEG and Team EGCON 2025 take pride in
